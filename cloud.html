@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Security - ritplpro</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+
+    <!-- External stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- ===== Css Links ===== -->
+    <link rel="stylesheet" href="./css/cloud.css">
+</head>
+
+<body>
+    <!-- ===== STATUS INDICATOR ===== -->
+    <div class="status-indicator"></div>
+
+    <!-- ===== HEADER SECTION ===== -->
+    <header>
+        <div class="container header-container">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <img src="../images/ritplpro.png" alt="RITPLPRO" width="90" height="80">
+            </a>
+
+            <!-- Navigation Menu -->
+            <nav>
+                <div class="nav-overlay" id="navOverlay"></div> <!-- Overlay for mobile menu -->
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#team">Team</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="plans.html">Plans</a></li>
+                </ul>
+            </nav>
+
+            <!-- Header actions: theme toggle and mobile menu button -->
+            <div class="header-actions">
+                <div class="theme-toggle-container">
+                    <button class="theme-btn" id="themeBtn">
+                        <i class="fas fa-sun theme-icon sun-icon"></i>
+                        <i class="fas fa-moon theme-icon moon-icon"></i>
+                    </button>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i> <!-- Hamburger icon for mobile menu -->
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== MOBILE MENU OVERLAY ===== -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- ===== CLOUD SECURITY SECTION ===== -->
+    <section class="cloud-security" id="cloud-security">
+        <div class="container">
+            <div class="section-title">
+                <h2>Cloud Security Solutions</h2>
+                <p>Protect your cloud infrastructure with advanced security measures and best practices</p>
+            </div>
+
+            <div class="cloud-security-container">
+                <!-- Data Protection Category -->
+                <div class="security-category">
+                    <div class="category-title">
+                        <i class="fas fa-database"></i>
+                        <h3>Data Protection</h3>
+                    </div>
+
+                    <div class="security-grid">
+                        <div class="security-card">
+                            <div class="security-icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <h4>Encryption & Key Management</h4>
+                            <p>Advanced encryption solutions for data at rest and in transit with comprehensive key
+                                management systems to protect sensitive information.</p>
+                            <div class="security-benefits">
+                                <h5><i class="fas fa-bolt"></i> Key Benefits</h5>
+                                <ul class="benefits-list">
+                                    <li>End-to-end data encryption</li>
+                                    <li>Centralized key management</li>
+                                    <li>Compliance with data regulations</li>
+                                    <li>Automated key rotation</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="security-card">
+                            <div class="security-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4>Data Loss Prevention</h4>
+                            <p>Comprehensive DLP solutions to monitor, detect, and prevent unauthorized data access,
+                                sharing, or exfiltration across cloud environments.</p>
+                            <div class="security-benefits">
+                                <h5><i class="fas fa-bolt"></i> Key Benefits</h5>
+                                <ul class="benefits-list">
+                                    <li>Real-time data monitoring</li>
+                                    <li>Policy-based access controls</li>
+                                    <li>Incident response automation</li>
+                                    <li>Compliance reporting</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Network Security Category -->
+                <div class="security-category" data-category="network">
+                    <div class="category-title">
+                        <i class="fas fa-network-wired"></i>
+                        <h3>Network Security</h3>
+                    </div>
+
+                    <div class="security-grid">
+                        <div class="security-card">
+                            <div class="security-icon">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                            <h4>Cloud Firewalls</h4>
+                            <p>Next-generation firewall solutions specifically designed for cloud environments with
+                                advanced threat detection and prevention capabilities.</p>
+                            <div class="security-benefits">
+                                <h5><i class="fas fa-bolt"></i> Key Benefits</h5>
+                                <ul class="benefits-list">
+                                    <li>Application-aware filtering</li>
+                                    <li>Intrusion prevention systems</li>
+                                    <li>Threat intelligence integration</li>
+                                    <li>Centralized policy management</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="security-card">
+                            <div class="security-icon">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                            <h4>Zero Trust Architecture</h4>
+                            <p>Implement Zero Trust principles to verify every access request regardless of origin,
+                                ensuring secure access to cloud resources.</p>
+                            <div class="security-benefits">
+                                <h5><i class="fas fa-bolt"></i> Key Benefits</h5>
+                                <ul class="benefits-list">
+                                    <li>Identity-based access controls</li>
+                                    <li>Micro-segmentation policies</li>
+                                    <li>Continuous verification</li>
+                                    <li>Reduced attack surface</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Identity & Access Management Category -->
+                <div class="security-category" data-category="iam">
+                    <div class="category-title">
+                        <i class="fas fa-user-lock"></i>
+                        <h3>Identity & Access Management</h3>
+                    </div>
+
+                    <div class="security-grid">
+                        <div class="security-card">
+                            <div class="security-icon">
+                                <i class="fas fa-id-card"></i>
+                            </div>
+                            <h4>Multi-Factor Authentication</h4>
+                            <p>Strengthen access security with multi-factor authentication solutions that require
+                                multiple verification methods for cloud access.</p>
+                            <div class="security-benefits">
+                                <h5><i class="fas fa-bolt"></i> Key Benefits</h5>
+                                <ul class="benefits-list">
+                                    <li>Multiple authentication factors</li>
+                                    <li>Adaptive authentication policies</li>
+                                    <li>Biometric verification options</li>
+                                    <li>Single sign-on integration</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="security-card">
+                            <div class="security-icon">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <h4>Privileged Access Management</h4>
+                            <p>Control and monitor privileged access to critical cloud resources with just-in-time
+                                access and comprehensive session monitoring.</p>
+                            <div class="security-benefits">
+                                <h5><i class="fas fa-bolt"></i> Key Benefits</h5>
+                                <ul class="benefits-list">
+                                    <li>Privileged session recording</li>
+                                    <li>Just-in-time access provisioning</li>
+                                    <li>Credential vaulting</li>
+                                    <li>Access request workflows</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Compliance & Governance Category -->
+                <div class="security-category" data-category="compliance">
+                    <div class="category-title">
+                        <i class="fas fa-balance-scale"></i>
+                        <h3>Compliance & Governance</h3>
+                    </div>
+
+                    <div class="security-grid">
+                        <div class="security-card">
+                            <div class="security-icon">
+                                <i class="fas fa-clipboard-check"></i>
+                            </div>
+                            <h4>Cloud Compliance Automation</h4>
+                            <p>Automated compliance monitoring and reporting for various regulatory frameworks including
+                                GDPR, HIPAA, PCI-DSS, and SOC 2.</p>
+                            <div class="security-benefits">
+                                <h5><i class="fas fa-bolt"></i> Key Benefits</h5>
+                                <ul class="benefits-list">
+                                    <li>Continuous compliance monitoring</li>
+                                    <li>Automated remediation</li>
+                                    <li>Custom compliance frameworks</li>
+                                    <li>Audit-ready reporting</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="security-card">
+                            <div class="security-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4>Security Posture Management</h4>
+                            <p>Continuous assessment and improvement of your cloud security posture with actionable
+                                insights and remediation guidance.</p>
+                            <div class="security-benefits">
+                                <h5><i class="fas fa-bolt"></i> Key Benefits</h5>
+                                <ul class="benefits-list">
+                                    <li>Risk scoring and prioritization</li>
+                                    <li>Security benchmark comparisons</li>
+                                    <li>Remediation guidance</li>
+                                    <li>Trend analysis and reporting</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===== FOOTER SECTION ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <!-- Company Info Column -->
+                <div class="footer-col">
+                    <a href="index.html" class="logo">
+                        <img src="./images/ritplpro.png" alt="RITPLPRO" width="90" height="80">
+                    </a>
+                    <p>Innovative technology solutions to transform your business and drive growth in the digital age.
+                        We deliver excellence through cutting-edge technology.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="#team"><i class="fas fa-chevron-right"></i> Team</a></li>
+                        <li><a href="#blog"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                        <li><a href="plans.html" class="active"><i class="fas fa-chevron-right"></i> Plans</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services Column -->
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Web Development</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Mobile App Development</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Backend Development</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Responsive Design</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> UI/UX Design</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Data Analytics</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Column -->
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter to get the latest updates, tech news, and exclusive offers.</p>
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer bottom with copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2023 <span class="" style="color: var(--primary);">ritplpro.</span> All Rights Reserved. |
+                    Designed with <i class="fas fa-heart" style="color: var(--accent);"></i> by <span class=""
+                        style="color: var(--primary);">ritplpro</span> Team</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== BACK TO TOP BUTTON ===== -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- ===== COLOR PICKER WIDGET ===== -->
+    <div class="color-picker-container">
+        <button class="color-picker-btn" id="colorPickerBtn">
+            <i class="fas fa-palette"></i>
+        </button>
+        <div class="color-picker-panel" id="colorPickerPanel">
+            <div class="color-picker-title">Choose Theme Color</div>
+            <div class="color-options">
+                <div class="color-option" style="background-color: #128C7E;" data-color="#128C7E"></div>
+                <div class="color-option" style="background-color: #3F51B5;" data-color="#3F51B5"></div>
+                <div class="color-option" style="background-color: #9C27B0;" data-color="#9C27B0"></div>
+                <div class="color-option" style="background-color: #E91E63;" data-color="#E91E63"></div>
+                <div class="color-option" style="background-color: #F44336;" data-color="#F44336"></div>
+                <div class="color-option" style="background-color: #FF5722;" data-color="#FF5722"></div>
+                <div class="color-option" style="background-color: #FF9800;" data-color="#FF9800">
+                </div>
+                <div class="color-option" style="background-color: #4CAF50;" data-color="#4CAF50"></div>
+            </div>
+            <div class="custom-color-input">
+                <label for="customColor">Custom Color:</label>
+                <input type="color" id="customColor" value="#128C7E">
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== JAVASCRIPT FILES ===== -->
+    <script src="./js/cloud.js"></script>
+
+</body>
+
+</html>

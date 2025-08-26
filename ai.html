@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Framework - ritplpro</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+
+    <!-- External stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/ai.css">
+</head>
+
+<body>
+    <!-- ===== STATUS INDICATOR ===== -->
+    <div class="status-indicator"></div>
+
+    <!-- ===== HEADER SECTION ===== -->
+    <header>
+        <div class="container header-container">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <img src="../images/ritplpro.png" alt="RITPLPRO" width="90" height="80">
+            </a>
+
+            <!-- Navigation Menu -->
+            <nav>
+                <div class="nav-overlay" id="navOverlay"></div> <!-- Overlay for mobile menu -->
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#team">Team</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="plans.html">Plans</a></li>
+                </ul>
+            </nav>
+
+            <!-- Header actions: theme toggle and mobile menu button -->
+            <div class="header-actions">
+                <div class="theme-toggle-container">
+                    <button class="theme-btn" id="themeBtn">
+                        <i class="fas fa-sun theme-icon sun-icon"></i>
+                        <i class="fas fa-moon theme-icon moon-icon"></i>
+                    </button>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i> <!-- Hamburger icon for mobile menu -->
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== MOBILE MENU OVERLAY ===== -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- ===== AI TRENDS SECTION ===== -->
+    <section class="ai-trends" id="ai-trends">
+        <div class="container">
+            <div class="section-title">
+                <h2>AI Trends & Innovations</h2>
+                <p>Explore the latest advancements shaping the future of artificial intelligence</p>
+            </div>
+
+            <div class="ai-trends-container">
+                <!-- Natural Language Processing Category -->
+                <div class="trend-category" data-category="nlp">
+                    <div class="category-title">
+                        <i class="fas fa-language"></i>
+                        <h3>Natural Language Processing</h3>
+                    </div>
+
+                    <div class="trend-grid">
+                        <div class="trend-card ai-trend-card">
+                            <div class="trend-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h4>Transformers & LLMs</h4>
+                            <p>Advanced language models that understand context and generate human-like text through
+                                self-attention mechanisms and massive training datasets.</p>
+                            <div class="trend-impact">
+                                <h5><i class="fas fa-bolt"></i> Impact Areas</h5>
+                                <ul class="impact-list">
+                                    <li>Content creation automation</li>
+                                    <li>Enhanced chatbots and virtual assistants</li>
+                                    <li>Multilingual translation systems</li>
+                                    <li>Code generation and documentation</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="trend-card ai-trend-card">
+                            <div class="trend-icon">
+                                <i class="fas fa-comment-dots"></i>
+                            </div>
+                            <h4>Conversational AI</h4>
+                            <p>AI systems capable of engaging in human-like dialogue across various domains using
+                                natural
+                                language understanding and generation.</p>
+                            <div class="trend-impact">
+                                <h5><i class="fas fa-bolt"></i> Impact Areas</h5>
+                                <ul class="impact-list">
+                                    <li>Customer service automation</li>
+                                    <li>Personalized learning assistants</li>
+                                    <li>Mental health support systems</li>
+                                    <li>Voice-activated smart home devices</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Computer Vision Category -->
+                <div class="trend-category" data-category="vision">
+                    <div class="category-title">
+                        <i class="fas fa-eye"></i>
+                        <h3>Computer Vision</h3>
+                    </div>
+
+                    <div class="trend-grid">
+                        <div class="trend-card ai-trend-card">
+                            <div class="trend-icon">
+                                <i class="fas fa-camera"></i>
+                            </div>
+                            <h4>Generative Vision Models</h4>
+                            <p>AI systems that can create and manipulate visual content with unprecedented realism using
+                                GANs and diffusion models.</p>
+                            <div class="trend-impact">
+                                <h5><i class="fas fa-bolt"></i> Impact Areas</h5>
+                                <ul class="impact-list">
+                                    <li>Creative content generation</li>
+                                    <li>Medical imaging enhancement</li>
+                                    <li>Augmented reality applications</li>
+                                    <li>Architectural and product design</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="trend-card ai-trend-card">
+                            <div class="trend-icon">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <h4>Video Understanding</h4>
+                            <p>Advanced algorithms that can analyze and interpret video content in real-time for various
+                                applications.</p>
+                            <div class="trend-impact">
+                                <h5><i class="fas fa-bolt"></i> Impact Areas</h5>
+                                <ul class="impact-list">
+                                    <li>Autonomous vehicle navigation</li>
+                                    <li>Surveillance and security systems</li>
+                                    <li>Sports analytics and training</li>
+                                    <li>Content moderation for video platforms</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Ethics & Responsible AI Category -->
+                <div class="trend-category" data-category="ethics">
+                    <div class="category-title">
+                        <i class="fas fa-balance-scale"></i>
+                        <h3>AI Ethics & Responsible AI</h3>
+                    </div>
+
+                    <div class="trend-grid">
+                        <div class="trend-card ai-trend-card">
+                            <div class="trend-icon">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                            <h4>Explainable AI (XAI)</h4>
+                            <p>Methods and techniques that make AI decision-making transparent and understandable to
+                                humans
+                                through visualization and interpretation.</p>
+                            <div class="trend-impact">
+                                <h5><i class="fas fa-bolt"></i> Impact Areas</h5>
+                                <ul class="impact-list">
+                                    <li>Healthcare diagnostics and treatment planning</li>
+                                    <li>Financial services and loan approvals</li>
+                                    <li>Judicial and legal decision support</li>
+                                    <li>Regulatory compliance and auditing</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="trend-card ai-trend-card">
+                            <div class="trend-icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <h4>Federated Learning</h4>
+                            <p>Decentralized machine learning approach that trains algorithms across multiple devices
+                                without exchanging data samples.</p>
+                            <div class="trend-impact">
+                                <h5><i class="fas fa-bolt"></i> Impact Areas</h5>
+                                <ul class="impact-list">
+                                    <li>Mobile keyboard prediction and personalization</li>
+                                    <li>Healthcare data analysis across institutions</li>
+                                    <li>IoT devices and edge computing</li>
+                                    <li>Financial fraud detection across banks</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI in Healthcare Category -->
+                <div class="trend-category" data-category="healthcare">
+                    <div class="category-title">
+                        <i class="fas fa-heartbeat"></i>
+                        <h3>AI in Healthcare</h3>
+                    </div>
+
+                    <div class="trend-grid">
+                        <div class="trend-card ai-trend-card">
+                            <div class="trend-icon">
+                                <i class="fas fa-dna"></i>
+                            </div>
+                            <h4>Precision Medicine</h4>
+                            <p>AI-driven approaches to customize healthcare, with medical decisions and treatments
+                                tailored
+                                to individual patients.</p>
+                            <div class="trend-impact">
+                                <h5><i class="fas fa-bolt"></i> Impact Areas</h5>
+                                <ul class="impact-list">
+                                    <li>Personalized treatment plans</li>
+                                    <li>Genomic analysis and interpretation</li>
+                                    <li>Drug discovery and development</li>
+                                    <li>Predictive health risk assessment</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="trend-card ai-trend-card">
+                            <div class="trend-icon">
+                                <i class="fas fa-stethoscope"></i>
+                            </div>
+                            <h4>Medical Imaging AI</h4>
+                            <p>Advanced algorithms that analyze medical images to detect, diagnose, and monitor diseases
+                                with high accuracy.</p>
+                            <div class="trend-impact">
+                                <h5><i class="fas fa-bolt"></i> Impact Areas</h5>
+                                <ul class="impact-list">
+                                    <li>Early disease detection</li>
+                                    <li>Radiology and pathology assistance</li>
+                                    <li>Surgical planning and guidance</li>
+                                    <li>Treatment response monitoring</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===== FOOTER SECTION ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <!-- Company Info Column -->
+                <div class="footer-col">
+                    <a href="index.html" class="logo">
+                        <img src="./images/ritplpro.png" alt="RITPLPRO" width="90" height="80">
+                    </a>
+                    <p>Innovative technology solutions to transform your business and drive growth in the digital age.
+                        We deliver excellence through cutting-edge technology.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="#team"><i class="fas fa-chevron-right"></i> Team</a></li>
+                        <li><a href="#blog"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                        <li><a href="plans.html" class="active"><i class="fas fa-chevron-right"></i> Plans</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services Column -->
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Web Development</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Mobile App Development</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Backend Development</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Responsive Design</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> UI/UX Design</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Data Analytics</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Column -->
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter to get the latest updates, tech news, and exclusive offers.</p>
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer bottom with copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2023 <span class="" style="color: var(--primary);">ritplpro.</span> All Rights Reserved. |
+                    Designed with <i class="fas fa-heart" style="color: var(--accent);"></i> by <span class=""
+                        style="color: var(--primary);">ritplpro</span> Team</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== BACK TO TOP BUTTON ===== -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- ===== COLOR PICKER WIDGET ===== -->
+    <div class="color-picker-container">
+        <button class="color-picker-btn" id="colorPickerBtn">
+            <i class="fas fa-palette"></i>
+        </button>
+        <div class="color-picker-panel" id="colorPickerPanel">
+            <div class="color-picker-title">Choose Theme Color</div>
+            <div class="color-options">
+                <div class="color-option" style="background-color: #128C7E;" data-color="#128C7E"></div>
+                <div class="color-option" style="background-color: #3F51B5;" data-color="#3F51B5"></div>
+                <div class="color-option" style="background-color: #9C27B0;" data-color="#9C27B0"></div>
+                <div class="color-option" style="background-color: #E91E63;" data-color="#E91E63"></div>
+                <div class="color-option" style="background-color: #F44336;" data-color="#F44336"></div>
+                <div class="color-option" style="background-color: #FF5722;" data-color="#FF5722"></div>
+                <div class="color-option" style="background-color: #FF9800;" data-color="#FF9800">
+                </div>
+                <div class="color-option" style="background-color: #4CAF50;" data-color="#4CAF50"></div>
+            </div>
+            <div class="custom-color-input">
+                <label for="customColor">Custom Color:</label>
+                <input type="color" id="customColor" value="#128C7E">
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== JAVASCRIPT FILES ===== -->
+    <script src="./js/ai.js"></script>
+
+</body>
+
+</html>
