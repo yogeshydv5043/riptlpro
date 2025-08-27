@@ -1,8 +1,5 @@
-/* ==========================================================================
-   ROOT VARIABLES & THEMES
-   ========================================================================== */
 :root {
---primary: #FF9800;
+    --primary: #FF9800;
     --primary-dark: #F57C00;
     --primary-light: #FFB74D;
     --secondary: #34B7F1;
@@ -27,7 +24,7 @@
 }
 
 [data-theme="dark"] {
---primary: #FF9800;
+    --primary: #FF9800;
     --primary-dark: #F57C00;
     --primary-light: #FFB74D;
     --secondary: #34B7F1;
@@ -49,9 +46,7 @@
     --glass-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 }
 
-/* ==========================================================================
-   ANIMATIONS
-   ========================================================================== */
+/* Animations */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -223,9 +218,7 @@
     }
 }
 
-/* ==========================================================================
-   THEME TOGGLE STYLES
-   ========================================================================== */
+/* Theme toggle styles */
 .header-actions {
     display: flex;
     align-items: center;
@@ -267,9 +260,7 @@
     display: block;
 }
 
-/* ==========================================================================
-   STATUS INDICATOR
-   ========================================================================== */
+/* Status Indicator */
 .status-indicator {
     position: fixed;
     top: 0;
@@ -287,9 +278,7 @@
     transform: scaleX(1);
 }
 
-/* ==========================================================================
-   BASE STYLES
-   ========================================================================== */
+/* Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -403,9 +392,7 @@ ul {
     font-size: 1.1rem;
 }
 
-/* ==========================================================================
-   HEADER STYLES
-   ========================================================================== */
+/* Header Styles */
 header {
     position: fixed;
     top: 0;
@@ -489,9 +476,7 @@ header {
     color: var(--primary);
 }
 
-/* ==========================================================================
-   MOBILE MENU STYLES
-   ========================================================================== */
+/* Mobile Menu Styles */
 @media (max-width: 768px) {
     .nav-links {
         position: fixed;
@@ -553,9 +538,7 @@ header {
     }
 }
 
-/* ==========================================================================
-   BUTTON STYLES
-   ========================================================================== */
+/* Button Styles */
 .btn {
     display: inline-flex;
     align-items: center;
@@ -586,6 +569,7 @@ header {
     background-color: white !important;
     color: var(--primary);
     box-shadow: 0 6px 20px rgba(18, 140, 126, 0.4);
+
 }
 
 .btn-secondary {
@@ -613,156 +597,160 @@ header {
     box-shadow: 0 6px 20px rgba(244, 63, 94, 0.4);
 }
 
-/* ==========================================================================
-   AI TRENDS SECTION STYLES
-   ========================================================================== */
-/* AI Trends Section */
-.ai-trends {
-    padding: 100px 0 60px;
-    background-color: var(--background);
-}
 
-.section-title {
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.section-title h2 {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 15px;
-    color: var(--text);
-}
-
-.section-title p {
-    font-size: 1.1rem;
-    color: var(--text-light);
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-.ai-trends-container {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-.trend-category {
-    border-radius: 12px;
-    padding: 30px;
-}
-
-.category-title {
-    display: flex;
-    align-items: center;
-    margin-bottom: 25px;
-    padding-bottom: 15px;
-}
-
-.category-title i {
-    font-size: 1.8rem;
-    color: var(--primary);
-    margin-right: 15px;
-}
-
-.category-title h3 {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: var(--text);
-}
-
-.trend-grid {
+/* Pricing Section */
+.pricing-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
+    gap: 2rem;
+    margin-top: 3rem;
 }
 
-.trend-card {
-    background: var(--background);
-    border-radius: 10px;
-    padding: 25px;
-    box-shadow: var(--shadow);
+.pricing-card {
+    background-color: var(--card-bg);
+    border-radius: 1rem;
+    padding: 2.5rem;
     transition: var(--transition);
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    text-align: center;
+
 }
 
-.trend-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+.pricing-card.popular {
+    border: 2px solid var(--primary);
+    transform: scale(1.05);
 }
 
-.trend-icon {
-    width: 60px;
-    height: 60px;
-    background: linear-gradient(135deg, var(--primary-light), var(--primary));
-    border-radius: 12px;
+.pricing-card.popular::before {
+    content: 'Most Popular';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--primary);
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 0 0 0 1rem;
+}
+
+.pricing-header {
+    margin-bottom: 2rem;
+}
+
+.pricing-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text);
+}
+
+.pricing-price {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.pricing-duration {
+    color: var(--text-light);
+    font-size: 0.9rem;
+}
+
+.pricing-features {
+    margin-bottom: 2rem;
+}
+
+.pricing-features li {
+    margin-bottom: 0.75rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
-    color: white;
-    font-size: 1.5rem;
-}
-
-.trend-card h4 {
-    font-family: 'Space Grotesk', sans-serif;
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin-bottom: 15px;
-    color: var(--text);
-}
-
-.trend-card p {
+    gap: 0.5rem;
     color: var(--text-light);
-    margin-bottom: 20px;
-    flex-grow: 1;
 }
 
-.trend-impact {
-    margin-top: auto;
-}
-
-.trend-impact h5 {
-    display: flex;
-    align-items: center;
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 12px;
-    color: var(--text);
-}
-
-.trend-impact h5 i {
-    color: var(--accent);
-    margin-right: 8px;
-}
-
-.impact-list {
-    list-style: none;
-}
-
-.impact-list li {
-    position: relative;
-    padding-left: 20px;
-    margin-bottom: 8px;
-    color: var(--text-light);
-    font-size: 0.95rem;
-}
-
-.impact-list li:before {
-    content: "•";
+.pricing-features i {
     color: var(--primary);
-    font-weight: bold;
-    position: absolute;
-    left: 0;
 }
 
-/* ==========================================================================
-   FOOTER
-   ========================================================================== */
+/* Gallery Section */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    aspect-ratio: 16/9;
+
+}
+
+.gallery-item:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+.gallery-item img,
+.gallery-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-slow);
+}
+
+.gallery-item:hover img,
+.gallery-item:hover video {
+    transform: scale(1.05);
+}
+
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: white;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: var(--transition);
+}
+
+.gallery-item:hover .gallery-caption {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.back-to-home {
+    text-align: right;
+    margin-top: 3rem;
+}
+
+.back-to-home a {
+    display: inline-flex;
+    align-items: center;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.back-to-home a:hover {
+    color: var(--secondary);
+    transform: translateY(-3px);
+}
+
+/* Footer */
 footer {
     background-color: var(--card-bg);
     padding: 5rem 0 0;
@@ -913,9 +901,7 @@ textarea.form-control {
     color: var(--accent);
 }
 
-/* ==========================================================================
-   BACK TO TOP BUTTON
-   ========================================================================== */
+/* Back to Top Button */
 .back-to-top {
     position: fixed;
     bottom: 2rem;
@@ -946,9 +932,8 @@ textarea.form-control {
     transform: translateY(-5px);
 }
 
-/* ==========================================================================
-   RIPPLE EFFECT
-   ========================================================================== */
+
+/* Ripple effect */
 .ripple-effect {
     position: absolute;
     width: 100px;
@@ -960,9 +945,7 @@ textarea.form-control {
     pointer-events: none;
 }
 
-/* ==========================================================================
-   COLOR PICKER STYLES
-   ========================================================================== */
+/* Color Picker Styles */
 .color-picker-container {
     position: fixed;
     bottom: 2rem;
@@ -1066,9 +1049,7 @@ textarea.form-control {
     color: var(--text);
 }
 
-/* ==========================================================================
-   RESPONSIVE STYLES
-   ========================================================================== */
+/* Responsive Styles */
 @media (max-width: 1024px) {
     h1 {
         font-size: 2.75rem;
@@ -1077,6 +1058,7 @@ textarea.form-control {
     h2 {
         font-size: 2rem;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -1105,16 +1087,7 @@ textarea.form-control {
         display: block;
     }
 
-    /* AI Grid Adjustments */
-    .trend-grid {
-        grid-template-columns: 1fr;
-    }
 
-    .section-title h2 {
-        font-size: 2.2rem;
-    }
-
-    /* Color Picker Adjustments */
     .color-picker-container {
         bottom: 1rem;
         left: 1rem;
@@ -1155,6 +1128,7 @@ textarea.form-control {
         font-size: 0.8rem;
         margin-bottom: 0.3rem;
     }
+
 }
 
 @media (max-width: 576px) {
@@ -1196,30 +1170,41 @@ textarea.form-control {
     }
 }
 
-/* ==========================================================================
-   ===== FRAMEWORK CARD ANIMATIONS ===== 
- ========================================================================== */
 
-.ai-trends {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-}
+/* Animation delays for staggered loading */
 
-.ai-trends.fade-up-animated {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Stagger the animations for a cascading effect */
-.trend-grid .trend-card:nth-child(1) {
+.pricing-card:nth-child(1) {
     transition-delay: 0.1s;
 }
 
-.trend-grid .trend-card:nth-child(2) {
+.pricing-card:nth-child(2) {
     transition-delay: 0.2s;
 }
 
-.trend-grid .trend-card:nth-child(3) {
+.pricing-card:nth-child(3) {
     transition-delay: 0.3s;
+}
+
+.gallery-item:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.gallery-item:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.gallery-item:nth-child(3) {
+    transition-delay: 0.3s;
+}
+
+.gallery-item:nth-child(4) {
+    transition-delay: 0.4s;
+}
+
+.gallery-item:nth-child(5) {
+    transition-delay: 0.5s;
+}
+
+.gallery-item:nth-child(6) {
+    transition-delay: 0.6s;
 }

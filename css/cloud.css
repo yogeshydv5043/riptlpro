@@ -2,9 +2,9 @@
            ROOT VARIABLES & THEMES
            ========================================================================== */
  :root {
-     --primary: #128C7E;
-     --primary-dark: #075E54;
-     --primary-light: #25D366;
+     --primary: #FF9800;
+     --primary-dark: #F57C00;
+     --primary-light: #FFB74D;
      --secondary: #34B7F1;
      --secondary-dark: #128C7E;
      --accent: #F55376;
@@ -27,9 +27,9 @@
  }
 
  [data-theme="dark"] {
-     --primary: #128C7E;
-     --primary-dark: #075E54;
-     --primary-light: #25D366;
+     --primary: #FF9800;
+     --primary-dark: #F57C00;
+     --primary-light: #FFB74D;
      --secondary: #34B7F1;
      --secondary-dark: #128C7E;
      --accent: #F55376;
