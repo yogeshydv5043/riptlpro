@@ -286,7 +286,7 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     background-color: var(--bg);
     color: var(--text);
     line-height: 1.6;
@@ -301,7 +301,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: 1rem;
@@ -597,49 +597,118 @@ header {
     box-shadow: 0 6px 20px rgba(244, 63, 94, 0.4);
 }
 
-
-/* Pricing Section */
+/* Pricing Container */
 .pricing-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr;
     gap: 2rem;
-    margin-top: 3rem;
+    margin: 3rem 0;
 }
 
+/* Pricing Card */
 .pricing-card {
-    background-color: var(--card-bg);
+    background: var(--card-bg);
     border-radius: 1rem;
-    padding: 2.5rem;
+    padding: 2rem;
+    box-shadow: var(--shadow);
     transition: var(--transition);
     border: 1px solid var(--border);
-    box-shadow: var(--shadow);
     position: relative;
     overflow: hidden;
-    z-index: 1;
-    text-align: center;
-
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
 }
 
+.pricing-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.pricing-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.pricing-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.pricing-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--primary-light);
+}
+
+.pricing-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary), var(--primary-light));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.pricing-card:hover::before {
+    transform: scaleX(1);
+}
+
+/* Popular Card */
 .pricing-card.popular {
     border: 2px solid var(--primary);
     transform: scale(1.05);
 }
 
-.pricing-card.popular::before {
+.pricing-card.popular::after {
     content: 'Most Popular';
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 15px;
+    right: -30px;
     background: var(--primary);
     color: white;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2.5rem;
     font-size: 0.8rem;
     font-weight: 600;
-    border-radius: 0 0 0 1rem;
+    transform: rotate(45deg);
 }
 
+/* Web App Card */
+.pricing-card.web-app-card {
+    border-top: 4px solid #8b5cf6;
+}
+
+.pricing-card.web-app-card .pricing-price {
+    color: #8b5cf6;
+}
+
+.pricing-card.web-app-card .pricing-features i {
+    color: #8b5cf6;
+}
+
+/* Pricing Header */
 .pricing-header {
     margin-bottom: 2rem;
+    position: relative;
+    text-align: center;
+}
+
+.pricing-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-light), var(--primary));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: white;
+    font-size: 1.8rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .pricing-title {
@@ -661,21 +730,148 @@ header {
     font-size: 0.9rem;
 }
 
+/* Pricing Features */
 .pricing-features {
-    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
 }
 
-.pricing-features li {
-    margin-bottom: 0.75rem;
+.pricing-features h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: var(--text);
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
+}
+
+.pricing-features h4::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.pricing-features ul {
+    list-style: none;
+}
+
+.pricing-features li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.8rem;
     color: var(--text-light);
+    display: flex;
+    align-items: center;
+    transition: var(--transition);
+}
+
+.pricing-features li:hover {
+    color: var(--primary);
+    transform: translateX(5px);
+}
+
+.pricing-features li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: bold;
 }
 
 .pricing-features i {
+    margin-right: 0.5rem;
     color: var(--primary);
+}
+
+.pricing-features .fa-times {
+    color: #ef4444;
+}
+
+/* Contact Note */
+.contact-note {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 2rem;
+    /* background: linear-gradient(135deg, var(--primary-light), var(--primary)); */
+    background-color: var(--bg);
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+    box-shadow: var(--shadow);
+    animation: fadeInUp 0.6s ease forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+
+.contact-note a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 2px solid white;
+    padding-bottom: 2px;
+    transition: all 0.3s ease;
+}
+
+.contact-note a:hover {
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+/* Tablet screens (≥768px) */
+@media (min-width: 768px) {
+    .pricing-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop screens (≥1024px) */
+@media (min-width: 1024px) {
+    .pricing-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .pricing-card.popular {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 768px) {
+    .pricing-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
+    }
+
+    .pricing-card.popular {
+        order: -1;
+    }
+
+    .pricing-card.popular::after {
+        right: -35px;
+        font-size: 0.7rem;
+    }
 }
 
 /* Gallery Section */
