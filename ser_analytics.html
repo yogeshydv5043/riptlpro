@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Responsive Design - ritplpro</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+
+    <!-- External stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/ser_analytics.css">
+</head>
+
+<body>
+    <!-- ===== STATUS INDICATOR ===== -->
+    <div class="status-indicator"></div>
+
+    <!-- ===== HEADER SECTION ===== -->
+    <header>
+        <div class="container header-container">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <img src="../images/ritplpro.png" alt="RITPLPRO" width="90" height="80">
+            </a>
+
+            <!-- Navigation Menu -->
+            <nav>
+                <div class="nav-overlay" id="navOverlay"></div> <!-- Overlay for mobile menu -->
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#team">Team</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="plans.html">Plans</a></li>
+                </ul>
+            </nav>
+
+            <!-- Header actions: theme toggle and mobile menu button -->
+            <div class="header-actions">
+                <div class="theme-toggle-container">
+                    <button class="theme-btn" id="themeBtn">
+                        <i class="fas fa-sun theme-icon sun-icon"></i>
+                        <i class="fas fa-moon theme-icon moon-icon"></i>
+                    </button>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i> <!-- Hamburger icon for mobile menu -->
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== MOBILE MENU OVERLAY ===== -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- ===== Data Analytics SECTION ===== -->
+    <section class="section" id="data-analytics" style="padding-top: 100px;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Data Analytics Services</h2>
+                <p class="section-subtitle">Transform your raw data into actionable insights that drive business growth.
+                    Our
+                    comprehensive analytics solutions help you make data-driven decisions, identify trends, and uncover
+                    hidden opportunities.</p>
+            </div>
+
+            <div class="analytics-grid">
+                <!-- Data Visualization -->
+                <div class="analytics-card">
+                    <div class="analytics-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Data Visualization</h3>
+                    <p>We transform complex datasets into intuitive, interactive visualizations that make patterns and
+                        trends easily understandable for stakeholders at all levels.</p>
+
+                    <div class="analytics-features">
+                        <h4>Tools & Techniques:</h4>
+                        <ul>
+                            <li
+                                data-description="Interactive dashboards that allow users to explore data through filters, drill-downs, and dynamic visualizations.">
+                                Interactive Dashboards
+                            </li>
+                            <li
+                                data-description="Customized reports tailored to specific business needs with key performance indicators and metrics.">
+                                Custom Reporting
+                            </li>
+                            <li
+                                data-description="Beautiful, publication-ready charts and graphs that effectively communicate insights.">
+                                Data Storytelling
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Predictive Analytics -->
+                <div class="analytics-card">
+                    <div class="analytics-icon"><i class="fas fa-brain"></i></div>
+                    <h3>Predictive Analytics</h3>
+                    <p>Leverage historical data to forecast future trends, behaviors, and outcomes with advanced
+                        statistical
+                        models and machine learning algorithms.</p>
+
+                    <div class="analytics-features">
+                        <h4>Approaches & Technologies:</h4>
+                        <ul>
+                            <li
+                                data-description="Machine learning models that predict future outcomes based on historical patterns and trends.">
+                                Forecasting Models
+                            </li>
+                            <li
+                                data-description="Statistical techniques to identify patterns, correlations, and anomalies in complex datasets.">
+                                Pattern Recognition
+                            </li>
+                            <li
+                                data-description="Algorithms that continuously learn from new data to improve prediction accuracy over time.">
+                                Machine Learning Algorithms
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Data Engineering -->
+                <div class="analytics-card">
+                    <div class="analytics-icon"><i class="fas fa-database"></i></div>
+                    <h3>Data Engineering</h3>
+                    <p>We design and implement robust data pipelines and infrastructure to collect, store, and process
+                        large
+                        volumes of data efficiently.</p>
+
+                    <div class="analytics-features">
+                        <h4>Technologies & Solutions:</h4>
+                        <ul>
+                            <li
+                                data-description="Automated workflows that extract, transform, and load data from various sources into a centralized repository.">
+                                ETL Pipelines
+                            </li>
+                            <li
+                                data-description="Centralized data repositories optimized for analytical processing and business intelligence.">
+                                Data Warehousing
+                            </li>
+                            <li
+                                data-description="Processing and analyzing large datasets distributed across multiple servers or clusters.">
+                                Big Data Solutions
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Business Intelligence -->
+                <div class="analytics-card">
+                    <div class="analytics-icon"><i class="fas fa-chart-pie"></i></div>
+                    <h3>Business Intelligence</h3>
+                    <p>Turn your data into actionable business insights with comprehensive BI solutions that support
+                        strategic decision-making across your organization.</p>
+
+                    <div class="analytics-features">
+                        <h4>Solutions & Methods:</h4>
+                        <ul>
+                            <li
+                                data-description="Identifying and tracking key performance indicators that align with business objectives.">
+                                KPI Development
+                            </li>
+                            <li
+                                data-description="Comparing performance against industry standards or competitors to identify areas for improvement.">
+                                Competitive Analysis
+                            </li>
+                            <li
+                                data-description="Examining historical data to understand the root causes of past outcomes and trends.">
+                                Performance Root Cause Analysis
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <p class="tagline">Unlock the power of your data to drive innovation and growth. Get in touch to discuss how
+                our
+                analytics solutions can transform your business!</p>
+
+            <div class="back-to-home">
+                <a href="index.html#services"><i class="fas fa-arrow-left"></i> Back to Service Page</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER SECTION ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <!-- Company Info Column -->
+                <div class="footer-col">
+                    <a href="index.html" class="logo">
+                        <img src="./images/ritplpro.png" alt="RITPLPRO" width="90" height="80">
+                    </a>
+                    <p>Innovative technology solutions to transform your business and drive growth in the digital age.
+                        We deliver excellence through cutting-edge technology.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="index.html#services" class="active"><i class="fas fa-chevron-right"></i>
+                                Services</a></li>
+                        <li><a href="index.html#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="index.html#team"><i class="fas fa-chevron-right"></i> Teams</a></li>
+                        <li><a href="index.html#blog"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                        <li><a href="plans.html"><i class="fas fa-chevron-right"></i> Plans</a></li>
+                        <li><a href="index.html#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+
+                    </ul>
+                </div>
+
+                <!-- Services Column -->
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="ser_web.html"><i class="fas fa-chevron-right"></i> Web Development</a></li>
+                        <li><a href="ser_mobile.html"><i class="fas fa-chevron-right"></i> Mobile App Development</a>
+                        </li>
+                        <li><a href="ser_backend.html"><i class="fas fa-chevron-right"></i> Backend Development</a></li>
+                        <li><a href="ser_responsive.html"><i class="fas fa-chevron-right"></i> Responsive Design</a>
+                        </li>
+                        <li><a href="ser_uiux.html"><i class="fas fa-chevron-right"></i> UI/UX Design</a></li>
+                        <li><a href="ser_analytics.html"><i class="fas fa-chevron-right"></i> Data Analytics</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Column -->
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter to get the latest updates, tech news, and exclusive offers.</p>
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer bottom with copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 <span class="" style="color: var(--primary);">ritplpro.</span> All Rights Reserved. |
+                    Designed with <i class="fas fa-heart" style="color: var(--accent);"></i> by <span class=""
+                        style="color: var(--primary);">ritplpro</span> Team</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== BACK TO TOP BUTTON ===== -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- ===== COLOR PICKER WIDGET ===== -->
+    <div class="color-picker-container">
+        <button class="color-picker-btn" id="colorPickerBtn">
+            <i class="fas fa-palette"></i>
+        </button>
+        <div class="color-picker-panel" id="colorPickerPanel">
+            <div class="color-picker-title">Choose Theme Color</div>
+            <div class="color-options">
+                <div class="color-option" style="background-color: #128C7E;" data-color="#128C7E"></div>
+                <div class="color-option" style="background-color: #3F51B5;" data-color="#3F51B5"></div>
+                <div class="color-option" style="background-color: #9C27B0;" data-color="#9C27B0"></div>
+                <div class="color-option" style="background-color: #E91E63;" data-color="#E91E63"></div>
+                <div class="color-option" style="background-color: #F44336;" data-color="#F44336"></div>
+                <div class="color-option" style="background-color: #FF5722;" data-color="#FF5722"></div>
+                <div class="color-option" style="background-color: #FF9800;" data-color="#FF9800"></div>
+                <div class="color-option" style="background-color: #4CAF50;" data-color="#4CAF50"></div>
+            </div>
+            <div class="custom-color-input">
+                <label for="customColor">Custom Color:</label>
+                <input type="color" id="customColor" value="#128C7E">
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== JAVASCRIPT FILES ===== -->
+    <script src="./js/ser_analytics.js"></script>
+
+</body>
+
+</html>

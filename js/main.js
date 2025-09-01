@@ -145,6 +145,23 @@ function animateOnScroll() {
             element.classList.add('animated');
         }
     });
+
+    const teamCards = document.querySelectorAll('.team-card');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.classList.add('animated');
+                }, 100);
+            }
+        });
+    }, { threshold: 0.2 });
+
+    teamCards.forEach(card => {
+        observer.observe(card);
+    });
+
 }
 
 // Initial animation on first scroll

@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/price.css">
+    <link rel="stylesheet" href="./css/plan.css">
 </head>
 
 <body>
@@ -32,8 +32,8 @@
                     <li><a href="index.html#about">About</a></li>
                     <li><a href="index.html#team">Team</a></li>
                     <li><a href="index.html#blog">Blog</a></li>
-                    <li><a href="index.html#contact">Contact</a></li>
                     <li><a href="plans.html" class="active">Plans</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
                 </ul>
             </nav>
 
@@ -55,7 +55,7 @@
     <div class="nav-overlay" id="navOverlay"></div>
 
     <!-- Pricing Section -->
-    <section class="section" style="padding-top: 100px;">
+    <section class="section" id="plan-pricing" style="padding-top: 100px;">
         <div class="container">
             <div class="section-title">
                 <h2>Our Plans</h2>
@@ -66,53 +66,98 @@
             <div class="pricing-container">
                 <div class="pricing-card">
                     <div class="pricing-header">
+                        <div class="pricing-icon">
+                            <i class="fas fa-file"></i>
+                        </div>
                         <h3 class="pricing-title">Single Page</h3>
-                        <div class="pricing-price">₹12,999</div>
+                        <div class="pricing-price">₹9,999</div>
                         <div class="pricing-duration">one-time payment</div>
                     </div>
-                    <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> 1 Responsive Web Page</li>
-                        <li><i class="fas fa-check"></i> Basic Optimization</li>
-                        <li><i class="fas fa-check"></i> Contact Form</li>
-                        <li><i class="fas fa-check"></i> 1 Month Support</li>
-                        <li><i class="fas fa-check"></i> Social Media Integration</li>
-                        <li><i class="fas fa-check"></i> Domain name and server cost not included</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-secondary" style="width: 100%;">Get Started</a>
+                    <div class="pricing-features">
+                        <h4>What's Included</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> 1 Responsive Web Page</li>
+                            <li><i class="fas fa-check"></i> Basic Optimization</li>
+                            <li><i class="fas fa-check"></i> Contact Form</li>
+                            <li><i class="fas fa-check"></i> 6 Month Support</li>
+                            <li><i class="fas fa-check"></i> Social Media Integration</li>
+                            <li><i class="fas fa-times"></i> Domain & Server</li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="pricing-card popular">
                     <div class="pricing-header">
+                        <div class="pricing-icon">
+                            <i class="fas fa-copy"></i>
+                        </div>
                         <h3 class="pricing-title">3-4 Pages</h3>
-                        <div class="pricing-price">₹20,000</div>
+                        <div class="pricing-price">₹19,999</div>
                         <div class="pricing-duration">one-time payment</div>
                     </div>
-                    <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> 3-4 Responsive Web Pages</li>
-                        <li><i class="fas fa-check"></i> Advanced Optimization</li>
-                        <li><i class="fas fa-check"></i> Contact Form + Google Maps</li>
-                        <li><i class="fas fa-check"></i> 3 Months Support</li>
-                        <li><i class="fas fa-check"></i> Social Media Integration</li>
-                        <li><i class="fas fa-check"></i> Domain name and server cost not included</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-primary" style="width: 100%;">Get Started</a>
+                    <div class="pricing-features">
+                        <h4>What's Included</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> 3-4 Responsive Web Pages</li>
+                            <li><i class="fas fa-check"></i> Advanced Optimization</li>
+                            <li><i class="fas fa-check"></i> Contact Form + Google Maps</li>
+                            <li><i class="fas fa-check"></i> 1 Year Support</li>
+                            <li><i class="fas fa-check"></i> Social Media Integration</li>
+                            <li><i class="fas fa-check"></i> Multi Language Code (Hindi-English)</li>
+                            <li><i class="fas fa-check"></i> Day , Night Mode & Color Picker </li>
+                            <li><i class="fas fa-times"></i> Domain & Server </li>
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="pricing-card">
                     <div class="pricing-header">
+                        <div class="pricing-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="pricing-title">Web Application</h3>
+                        <div class="pricing-price">Custom-Price</div>
+                        <div class="pricing-duration">project-based</div>
+                    </div>
+                    <div class="pricing-features">
+                        <h4>What's Included</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Fully Responsive Design</li>
+                            <li><i class="fas fa-check"></i> Custom Functionality</li>
+                            <li><i class="fas fa-check"></i> Database Integration</li>
+                            <li><i class="fas fa-check"></i> Framework Integration</li>
+                            <li><i class="fas fa-check"></i> 1 Year Support</li>
+                            <li><i class="fas fa-check"></i> Domain & Server </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="pricing-icon">
+                            <i class="fas fa-plus-square"></i>
+                        </div>
                         <h3 class="pricing-title">Additional Pages</h3>
                         <div class="pricing-price">₹2,000</div>
                         <div class="pricing-duration">per page</div>
                     </div>
-                    <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> Additional Responsive Pages</li>
-                        <li><i class="fas fa-check"></i> Optimized</li>
-                        <li><i class="fas fa-check"></i> Consistent Design</li>
-                        <li><i class="fas fa-check"></i> Quick Turnaround</li>
-                        <li><i class="fas fa-check"></i> Integrated Navigation</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-secondary" style="width: 100%;">Add to Existing Site</a>
+                    <div class="pricing-features">
+                        <h4>What's Included</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Additional Responsive Pages</li>
+                            <li><i class="fas fa-check"></i> Optimized</li>
+                            <li><i class="fas fa-check"></i> Consistent Design</li>
+                            <li><i class="fas fa-check"></i> Quick Turnaround</li>
+                            <li><i class="fas fa-check"></i> Integrated Navigation</li>
+                        </ul>
+                    </div>
                 </div>
+            </div>
+
+            <div class="contact-note">
+                <p>Interested in any of our plans? <a href="index.html#contact">Contact us</a> for more information or
+                    to
+                    get started on your project.</p>
             </div>
         </div>
     </section>
@@ -170,6 +215,9 @@
                     <div class="gallery-caption">Portfolio Website</div>
                 </div>
             </div>
+            <div class="back-to-home">
+                <a href="index.html"><i class="fas fa-arrow-left"></i> Back to Home Page</a>
+            </div>
         </div>
     </section>
 
@@ -195,13 +243,13 @@
                 <div class="footer-col">
                     <h4>Quick Links</h4>
                     <ul class="footer-links">
-                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
-                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
-                        <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
-                        <li><a href="#team"><i class="fas fa-chevron-right"></i> Team</a></li>
-                        <li><a href="#blog"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="index.html#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="index.html#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="index.html#team"><i class="fas fa-chevron-right"></i> Teams</a></li>
+                        <li><a href="index.html#blog"><i class="fas fa-chevron-right"></i> Blog</a></li>
                         <li><a href="plans.html" class="active"><i class="fas fa-chevron-right"></i> Plans</a></li>
-                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                        <li><a href="index.html#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
 
                     </ul>
                 </div>
@@ -209,12 +257,14 @@
                 <div class="footer-col">
                     <h4>Our Services</h4>
                     <ul class="footer-links">
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Web Development</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Mobile App Development</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Backend Development</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Responsive Design</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> UI/UX Design</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-right"></i> Data Analytics</a></li>
+                        <li><a href="ser_web.html"><i class="fas fa-chevron-right"></i> Web Development</a></li>
+                        <li><a href="ser_mobile.html"><i class="fas fa-chevron-right"></i> Mobile App Development</a>
+                        </li>
+                        <li><a href="ser_backend.html"><i class="fas fa-chevron-right"></i> Backend Development</a></li>
+                        <li><a href="ser_responsive.html"><i class="fas fa-chevron-right"></i> Responsive Design</a>
+                        </li>
+                        <li><a href="ser_uiux.html"><i class="fas fa-chevron-right"></i> UI/UX Design</a></li>
+                        <li><a href="ser_analytics.html"><i class="fas fa-chevron-right"></i> Data Analytics</a></li>
                     </ul>
                 </div>
 
@@ -231,7 +281,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2023 <span class="" style="color: var(--primary);">ritplpro.</span> All Rights Reserved. |
+                <p>&copy; 2025 <span class="" style="color: var(--primary);">ritplpro.</span> All Rights Reserved. |
                     Designed with <i class="fas fa-heart" style="color: var(--accent);"></i> by <span class=""
                         style="color: var(--primary);">ritplpro</span> Team</p>
             </div>
@@ -268,7 +318,7 @@
         </div>
     </div>
 
-    <script src="./js/price.js"></script>
+    <script src="./js/plan.js"></script>
 
 </body>
 

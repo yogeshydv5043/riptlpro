@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Responsive Design - ritplpro</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+
+    <!-- External stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/ser_responsive.css">
+</head>
+
+<body>
+    <!-- ===== STATUS INDICATOR ===== -->
+    <div class="status-indicator"></div>
+
+    <!-- ===== HEADER SECTION ===== -->
+    <header>
+        <div class="container header-container">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <img src="../images/ritplpro.png" alt="RITPLPRO" width="90" height="80">
+            </a>
+
+            <!-- Navigation Menu -->
+            <nav>
+                <div class="nav-overlay" id="navOverlay"></div> <!-- Overlay for mobile menu -->
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#team">Team</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                    <li><a href="plans.html">Plans</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Header actions: theme toggle and mobile menu button -->
+            <div class="header-actions">
+                <div class="theme-toggle-container">
+                    <button class="theme-btn" id="themeBtn">
+                        <i class="fas fa-sun theme-icon sun-icon"></i>
+                        <i class="fas fa-moon theme-icon moon-icon"></i>
+                    </button>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i> <!-- Hamburger icon for mobile menu -->
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== MOBILE MENU OVERLAY ===== -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- ===== Responsive Design SECTION ===== -->
+    <section class="section" id="responsive-design" style="padding-top: 100px;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Responsive Web Design Services</h2>
+                <p class="section-subtitle">Responsive web design ensures your website looks and functions perfectly
+                    across all devices - from desktops to smartphones. We create fluid, adaptive layouts that provide
+                    optimal user experiences regardless of screen size or orientation.</p>
+            </div>
+
+            <div class="responsive-grid">
+                <!-- Adaptive Layouts -->
+                <div class="responsive-card">
+                    <div class="responsive-icon"><i class="fas fa-desktop"></i></div>
+                    <h3>Adaptive Layouts</h3>
+                    <p>We design websites that automatically adjust their layout, content, and functionality based on
+                        the device being used, ensuring optimal viewing experiences across all screen sizes.</p>
+
+                    <div class="responsive-features">
+                        <h4>Technologies & Approaches:</h4>
+                        <ul>
+                            <li
+                                data-description="CSS Grid provides a two-dimensional layout system that allows for precise control over both rows and columns in web design.">
+                                CSS Grid Systems
+                            </li>
+                            <li
+                                data-description="Flexbox offers a one-dimensional layout model that provides efficient space distribution and alignment capabilities.">
+                                Flexbox Layouts
+                            </li>
+                            <li
+                                data-description="We create fluid layouts that use relative units like percentages rather than fixed units like pixels for flexible sizing.">
+                                Fluid Layouts
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Mobile-First Design -->
+                <div class="responsive-card">
+                    <div class="responsive-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>Mobile-First Design</h3>
+                    <p>We prioritize mobile experience in our design process, starting with the smallest screens and
+                        progressively enhancing for larger devices, ensuring optimal performance on all devices.</p>
+
+                    <div class="responsive-features">
+                        <h4>Technologies & Approaches:</h4>
+                        <ul>
+                            <li
+                                data-description="We design with a mobile-first approach, then use media queries to enhance the experience on larger screens.">
+                                Progressive Enhancement
+                            </li>
+                            <li
+                                data-description="We implement touch-friendly interfaces with appropriate button sizes and gestures for mobile devices.">
+                                Touch-Optimized Interfaces
+                            </li>
+                            <li
+                                data-description="We prioritize content hierarchy, ensuring the most important information is immediately accessible on small screens.">
+                                Content Prioritization
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Responsive Frameworks -->
+                <div class="responsive-card">
+                    <div class="responsive-icon"><i class="fas fa-th-large"></i></div>
+                    <h3>Framework Implementation</h3>
+                    <p>We leverage industry-standard responsive frameworks to build robust, maintainable websites that
+                        adapt beautifully to any screen size while ensuring cross-browser compatibility.</p>
+
+                    <div class="responsive-features">
+                        <h4>Technologies & Approaches:</h4>
+                        <ul>
+                            <li
+                                data-description="Bootstrap is the world's most popular framework for building responsive, mobile-first websites.">
+                                Bootstrap Framework
+                            </li>
+                            <li
+                                data-description="Tailwind CSS is a utility-first CSS framework that makes building custom responsive designs faster and more efficient.">
+                                Tailwind CSS
+                            </li>
+                            <li
+                                data-description="Foundation is a sophisticated responsive front-end framework with advanced grid systems and UI components.">
+                                Foundation Framework
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Performance Optimization -->
+                <div class="responsive-card">
+                    <div class="responsive-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    <h3>Performance Optimization</h3>
+                    <p>We optimize websites for fast loading times across all devices, implementing techniques that
+                        reduce page weight and improve performance especially on mobile networks.</p>
+
+                    <div class="responsive-features">
+                        <h4>Technologies & Approaches:</h4>
+                        <ul>
+                            <li
+                                data-description="We serve appropriately sized images for each device using srcset and sizes attributes to avoid loading large desktop images on mobile devices.">
+                                Responsive Images
+                            </li>
+                            <li
+                                data-description="We implement lazy loading to defer offscreen images and content until they're needed, reducing initial page load time.">
+                                Lazy Loading
+                            </li>
+                            <li
+                                data-description="We minimize and compress all assets to reduce file sizes and improve loading times, especially on mobile networks.">
+                                Asset Optimization
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <p class="tagline">Let's create a responsive website that delivers exceptional experiences on every device.
+                Get in touch to discuss your responsive design needs!</p>
+
+            <div class="back-to-home">
+                <a href="index.html#services"><i class="fas fa-arrow-left"></i> Back to Service Page</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===== FOOTER SECTION ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <!-- Company Info Column -->
+                <div class="footer-col">
+                    <a href="index.html" class="logo">
+                        <img src="./images/ritplpro.png" alt="RITPLPRO" width="90" height="80">
+                    </a>
+                    <p>Innovative technology solutions to transform your business and drive growth in the digital age.
+                        We deliver excellence through cutting-edge technology.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="index.html#services" class="active"><i class="fas fa-chevron-right"></i>
+                                Services</a></li>
+                        <li><a href="index.html#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="index.html#team"><i class="fas fa-chevron-right"></i> Teams</a></li>
+                        <li><a href="index.html#blog"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                        <li><a href="plans.html"><i class="fas fa-chevron-right"></i> Plans</a></li>
+                        <li><a href="index.html#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+
+                    </ul>
+                </div>
+
+                <!-- Services Column -->
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="ser_web.html"><i class="fas fa-chevron-right"></i> Web Development</a></li>
+                        <li><a href="ser_mobile.html"><i class="fas fa-chevron-right"></i> Mobile App Development</a>
+                        </li>
+                        <li><a href="ser_backend.html"><i class="fas fa-chevron-right"></i> Backend Development</a></li>
+                        <li><a href="ser_responsive.html"><i class="fas fa-chevron-right"></i> Responsive Design</a>
+                        </li>
+                        <li><a href="ser_uiux.html"><i class="fas fa-chevron-right"></i> UI/UX Design</a></li>
+                        <li><a href="ser_analytics.html"><i class="fas fa-chevron-right"></i> Data Analytics</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Column -->
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter to get the latest updates, tech news, and exclusive offers.</p>
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer bottom with copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 <span class="" style="color: var(--primary);">ritplpro.</span> All Rights Reserved. |
+                    Designed with <i class="fas fa-heart" style="color: var(--accent);"></i> by <span class=""
+                        style="color: var(--primary);">ritplpro</span> Team</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== BACK TO TOP BUTTON ===== -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- ===== COLOR PICKER WIDGET ===== -->
+    <div class="color-picker-container">
+        <button class="color-picker-btn" id="colorPickerBtn">
+            <i class="fas fa-palette"></i>
+        </button>
+        <div class="color-picker-panel" id="colorPickerPanel">
+            <div class="color-picker-title">Choose Theme Color</div>
+            <div class="color-options">
+                <div class="color-option" style="background-color: #128C7E;" data-color="#128C7E"></div>
+                <div class="color-option" style="background-color: #3F51B5;" data-color="#3F51B5"></div>
+                <div class="color-option" style="background-color: #9C27B0;" data-color="#9C27B0"></div>
+                <div class="color-option" style="background-color: #E91E63;" data-color="#E91E63"></div>
+                <div class="color-option" style="background-color: #F44336;" data-color="#F44336"></div>
+                <div class="color-option" style="background-color: #FF5722;" data-color="#FF5722"></div>
+                <div class="color-option" style="background-color: #FF9800;" data-color="#FF9800"></div>
+                <div class="color-option" style="background-color: #4CAF50;" data-color="#4CAF50"></div>
+            </div>
+            <div class="custom-color-input">
+                <label for="customColor">Custom Color:</label>
+                <input type="color" id="customColor" value="#128C7E">
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== JAVASCRIPT FILES ===== -->
+    <script src="./js/ser_responsive.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Web-Development - ritplpro</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+
+    <!-- External stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/ser_web.css">
+</head>
+
+<body>
+    <!-- ===== STATUS INDICATOR ===== -->
+    <div class="status-indicator"></div>
+
+    <!-- ===== HEADER SECTION ===== -->
+    <header>
+        <div class="container header-container">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <img src="../images/ritplpro.png" alt="RITPLPRO" width="90" height="80">
+            </a>
+
+            <!-- Navigation Menu -->
+            <nav>
+                <div class="nav-overlay" id="navOverlay"></div> <!-- Overlay for mobile menu -->
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services" class="active">Services</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#team">Team</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                    <li><a href="plans.html">Plans</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Header actions: theme toggle and mobile menu button -->
+            <div class="header-actions">
+                <div class="theme-toggle-container">
+                    <button class="theme-btn" id="themeBtn">
+                        <i class="fas fa-sun theme-icon sun-icon"></i>
+                        <i class="fas fa-moon theme-icon moon-icon"></i>
+                    </button>
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i> <!-- Hamburger icon for mobile menu -->
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== MOBILE MENU OVERLAY ===== -->
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- ===== Web-Development SECTION ===== -->
+
+    <!-- Web Development Section -->
+    <section class="section" id="web-development" style="padding-top: 100px;">
+        <div class="container">
+
+            <div class="section-title">
+                <h2>Web Development Services</h2>
+                <p class="section-subtitle">Web development is the process of building, creating, and maintaining
+                    websites and web applications.
+                    It encompasses everything from simple static web pages to complex web applications, e-commerce
+                    platforms, and social network services.</p>
+            </div>
+            <div class="webdev-grid">
+                <!-- Frontend -->
+                <div class="webdev-card">
+                    <div class="webdev-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>Frontend Development</h3>
+                    <p>Frontend development involves creating the visual parts of a website that users interact with. It
+                        focuses on user experience, responsive design, and bringing creative concepts to life in the
+                        browser.</p>
+
+                    <div class="developed-apps">
+                        <h4>Technologies & Uses:</h4>
+                        <ul>
+                            <li
+                                data-description="HTML provides the structure, CSS handles the visual styling, and JavaScript adds interactivity to web pages. Together they form the foundation of all web development.">
+                                HTML, CSS & JavaScript
+                            </li>
+                            <li
+                                data-description="React, Angular and Vue are powerful JavaScript frameworks that help developers build complex, interactive user interfaces with reusable components and efficient state management.">
+                                Frameworks (React, Angular, Vue)
+                            </li>
+                            <li
+                                data-description="Responsive design ensures websites work well on all device sizes from mobile phones to desktop computers, using flexible layouts and media queries.">
+                                Responsive Design
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="webdev-card">
+                    <div class="webdev-icon"><i class="fas fa-server"></i></div>
+                    <h3>Backend Development</h3>
+                    <p>Backend development involves server-side programming that powers the website's functionality,
+                        database interactions, user authentication, and business logic behind the scenes.</p>
+
+                    <div class="developed-apps">
+                        <h4>Technologies & Uses:</h4>
+                        <ul>
+                            <li
+                                data-description="Server-side languages like Node.js, Python, Java, and PHP handle the logic and processing that happens on the web server before content is sent to the user's browser.">
+                                Server-Side Programming
+                            </li>
+                            <li
+                                data-description="APIs (Application Programming Interfaces) allow different software applications to communicate with other, enabling integration with third-party services.">
+                                API Development
+                            </li>
+                            <li
+                                data-description="User authentication systems verify user identities, while authorization controls what resources and actions users can access based on their permissions.">
+                                Authentication & Authorization
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="webdev-card">
+                    <div class="webdev-icon"><i class="fas fa-database"></i></div>
+                    <h3>Database Management</h3>
+                    <p>Database management involves storing, organizing, and managing data efficiently to ensure
+                        websites and applications can retrieve and manipulate information quickly and reliably.</p>
+
+                    <div class="developed-apps">
+                        <h4>Technologies & Uses:</h4>
+                        <ul>
+                            <li
+                                data-description="SQL databases like MySQL and PostgreSQL use structured tables with relationships to store data in an organized, consistent manner, ideal for complex queries.">
+                                SQL Databases (MySQL, PostgreSQL)
+                            </li>
+                            <li
+                                data-description="NoSQL databases like MongoDB store data in flexible, document-based formats that can scale horizontally and handle unstructured data efficiently.">
+                                NoSQL Databases (MongoDB)
+                            </li>
+                            <li
+                                data-description="Caching systems like Redis store frequently accessed data in memory for extremely fast retrieval, reducing load on primary databases.">
+                                Caching Systems (Redis)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="webdev-card">
+                    <div class="webdev-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Tools & Deployment</h3>
+                    <p>This area covers the tools, processes, and platforms used to develop, test, deploy, and maintain
+                        web applications efficiently and reliably in production environments.</p>
+
+                    <div class="developed-apps">
+                        <h4>Technologies & Uses:</h4>
+                        <ul>
+                            <li
+                                data-description="Version control with Git allows developers to track changes, collaborate on code, and revert to previous versions when needed, while platforms like GitHub and GitLab facilitate collaboration.">
+                                Version Control (Git)
+                            </li>
+                            <li
+                                data-description="Containerization with Docker packages applications and their dependencies into standardized units, ensuring consistency across different environments from development to production.">
+                                Containerization (Docker)
+                            </li>
+                            <li
+                                data-description="Cloud platforms like AWS, Azure, and Google Cloud provide scalable infrastructure and services for hosting web applications with high availability and global reach.">
+                                Cloud Platforms (AWS, Azure)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <p class="tagline">Let's build something amazing together. Get in touch to discuss your web development
+                needs!
+            </p>
+
+            <div class="back-to-home">
+                <a href="index.html#services"><i class="fas fa-arrow-left"></i> Back to Service Page</a>
+            </div>
+        </div>
+    </section>
+    <!-- ===== FOOTER SECTION ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <!-- Company Info Column -->
+                <div class="footer-col">
+                    <a href="index.html" class="logo">
+                        <img src="./images/ritplpro.png" alt="RITPLPRO" width="90" height="80">
+                    </a>
+                    <p>Innovative technology solutions to transform your business and drive growth in the digital age.
+                        We deliver excellence through cutting-edge technology.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="index.html#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="index.html#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                        <li><a href="index.html#team"><i class="fas fa-chevron-right"></i> Teams</a></li>
+                        <li><a href="index.html#blog"><i class="fas fa-chevron-right"></i> Blog</a></li>
+                        <li><a href="plans.html" class="active"><i class="fas fa-chevron-right"></i> Plans</a></li>
+                        <li><a href="index.html#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+
+                    </ul>
+                </div>
+
+                <!-- Services Column -->
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="ser_web.html"><i class="fas fa-chevron-right"></i> Web Development</a></li>
+                        <li><a href="ser_mobile.html"><i class="fas fa-chevron-right"></i> Mobile App Development</a>
+                        </li>
+                        <li><a href="ser_backend.html"><i class="fas fa-chevron-right"></i> Backend Development</a></li>
+                        <li><a href="ser_responsive.html"><i class="fas fa-chevron-right"></i> Responsive Design</a>
+                        </li>
+                        <li><a href="ser_uiux.html"><i class="fas fa-chevron-right"></i> UI/UX Design</a></li>
+                        <li><a href="ser_analytics.html"><i class="fas fa-chevron-right"></i> Data Analytics</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Column -->
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter to get the latest updates, tech news, and exclusive offers.</p>
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer bottom with copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 <span class="" style="color: var(--primary);">ritplpro.</span> All Rights Reserved. |
+                    Designed with <i class="fas fa-heart" style="color: var(--accent);"></i> by <span class=""
+                        style="color: var(--primary);">ritplpro</span> Team</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== BACK TO TOP BUTTON ===== -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- ===== COLOR PICKER WIDGET ===== -->
+    <div class="color-picker-container">
+        <button class="color-picker-btn" id="colorPickerBtn">
+            <i class="fas fa-palette"></i>
+        </button>
+        <div class="color-picker-panel" id="colorPickerPanel">
+            <div class="color-picker-title">Choose Theme Color</div>
+            <div class="color-options">
+                <div class="color-option" style="background-color: #128C7E;" data-color="#128C7E"></div>
+                <div class="color-option" style="background-color: #3F51B5;" data-color="#3F51B5"></div>
+                <div class="color-option" style="background-color: #9C27B0;" data-color="#9C27B0"></div>
+                <div class="color-option" style="background-color: #E91E63;" data-color="#E91E63"></div>
+                <div class="color-option" style="background-color: #F44336;" data-color="#F44336"></div>
+                <div class="color-option" style="background-color: #FF5722;" data-color="#FF5722"></div>
+                <div class="color-option" style="background-color: #FF9800;" data-color="#FF9800">
+                </div>
+                <div class="color-option" style="background-color: #4CAF50;" data-color="#4CAF50"></div>
+            </div>
+            <div class="custom-color-input">
+                <label for="customColor">Custom Color:</label>
+                <input type="color" id="customColor" value="#128C7E">
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== JAVASCRIPT FILES ===== -->
+    <script src="./js/ser_web.js"></script>
+
+</body>
+
+</html>
